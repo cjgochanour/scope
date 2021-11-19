@@ -1,3 +1,5 @@
+// C is for Cookie
+
 const cookies = [
     "Oatmeal Raisin",
     "Chocolate Chip",
@@ -11,3 +13,13 @@ for (let y = 0; y < cookies.length; y++) {
     const currentCookie = cookies[y];
     console.log(`Mmmmmmm... that's a good ${currentCookie} cookie`);
 }
+
+// Conjunction Function
+
+const conjunction = function (firstWord, secondWord) {
+    const conjoinedWord = `${firstWord} ${secondWord}`;
+    return conjoinedWord;
+};
+
+let masterC = conjunction("Master", "Card");
+console.log(masterC);
