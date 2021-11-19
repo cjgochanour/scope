@@ -67,3 +67,31 @@ for (const location of locations) {
         console.log("This location is invalid");
     }
 }
+
+// Lambda Llama
+
+const llamaNamer = function () {
+    const possibleNames = [
+        "Larry",
+        "Leon",
+        "Leona",
+        "Les",
+        "Laura",
+        "Lemony",
+        "Lars",
+        "Lekisha",
+    ];
+    const randomizer = Math.floor(Math.random() * 7);
+    let name;
+    let suffix;
+
+    const namer = function () {
+        suffix = " the Llama";
+        name = possibleNames[randomizer];
+    };
+    namer();
+    return name + suffix;
+};
+
+nameMaker = llamaNamer();
+console.log(nameMaker);
